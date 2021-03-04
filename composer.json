@@ -1,0 +1,57 @@
+{
+    "name": "g2/financialadapter",
+    "description": "Allow for plugin third party financial applications",
+    "keywords": [
+        "g2",
+        "financialadapter"
+    ],
+    "homepage": "https://github.com/g2/financialadapter",
+    "license": "The Unlicense",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Georgie Santiago",
+            "email": "milestoneartisan@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0",
+        "mackensiealvarezz/tdameritrade-laravel": "^2.0.1",
+        "matthewbdaly/artisan-standalone": "^0.0.11",
+        "moneyphp/money": "^3.3"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "G2\\FinancialAdapter\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "G2\\FinancialAdapter\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "G2\\FinancialAdapter\\FinancialAdapterServiceProvider"
+            ],
+            "aliases": {
+                "FinancialAdapter": "G2\\FinancialAdapter\\FinancialAdapterFacade"
+            }
+        }
+    }
+}
