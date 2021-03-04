@@ -1,6 +1,6 @@
 <?php
 
-namespace G2\FinancialAdapter\Services\Actions;
+namespace G2\FinancialAdapter\Actions;
 
 use G2\FinancialAdapter\Services\Interfaces\IActionInterface;
 
@@ -12,7 +12,7 @@ abstract class BaseAction implements IActionInterface
      */
     protected $stock;
 
-    public function __construct(G2\FinancialAdapter\Services\Client\Stock $stock)
+    public function __construct(G2\FinancialAdapter\Client\Stock $stock)
     {
 	    $this->stock = $stock;
     }

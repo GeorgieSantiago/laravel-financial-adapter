@@ -1,11 +1,11 @@
 <?php
 
-namespace G2\FinancialAdapter\Http\Requests\ServiceAccount;
+namespace G2\FinancialAdapter\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use G2\FinancialAdapter\Http\Requests\BaseRequest;
+use Illuminate\Http\Requests;
 
-class UpdateRequest extends BaseRequest 
+class UpdateRequest extends Requests 
 {
     /**
      * Get the validation rules that apply to the request.

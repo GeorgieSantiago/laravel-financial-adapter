@@ -1,10 +1,10 @@
 <?php
 
-namespace G2\FinancialAdapter\Services\Actions;
+namespace G2\FinancialAdapter\Actions;
 
 class Sell extends BaseAction
 {
-    public function __construct(G2\FinancialAdapter\Services\Client\Stock $stock)
+    public function __construct(G2\FinancialAdapter\Client\Stock $stock)
     {
 	    parent::__construct($stock);
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace G2\FinancialAdapter\Services\Client;
+namespace G2\FinancialAdapter\Client;
 
 use G2\FinancialAdapter\Services\Interfaces\ITradeClient;
 use G2\FinancialAdapter\Services\Client\BaseBuilder;

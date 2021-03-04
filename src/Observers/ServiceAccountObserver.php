@@ -2,7 +2,6 @@
 
 namespace G2\FinancialAdapter\Observers;
 
-use G2\FinancialAdapter\Services\Client\TradeBuilder;
 use G2\FinancialAdapter\Models\ServiceAccount;
 
 class ServiceAccountObserver

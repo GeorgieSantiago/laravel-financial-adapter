@@ -1,5 +1,5 @@
 <?php
-namespace G2\FinancialAdapter\Services\Response;
+namespace G2\FinancialAdapter\Response;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 /**
