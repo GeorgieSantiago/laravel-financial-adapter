@@ -1,24 +1,24 @@
 <?php
 
-namespace G2\FinancialAdapter\Commands;
+namespace G2\FinancialAdapter\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class Migrate extends Command
+class Routes extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'financial:migrate {--force}';
+    protected $signature = 'financial:routes';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Migrate database';
+    protected $description = 'View available routes';
 
     /**
      * Create a new command instance.
@@ -37,6 +37,6 @@ class Migrate extends Command
      */
     public function handle()
     {
-        $this->info("Working");
+        $this->info("Working!");
     }
 }

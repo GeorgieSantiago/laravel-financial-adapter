@@ -11,13 +11,12 @@ class FinancialAdapterServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        dd(get_class_methods($this));
         /*
          * Optional methods to load your package assets
          */
          $this->loadMigrationsFrom(__DIR__.'/database/migrations');
          $this->loadRoutesFrom(__DIR__.'/routes.php');
-         $this->commands(__DIR__.'/Commands');
+         $this->commands(__DIR__.'/Console/Commands');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
