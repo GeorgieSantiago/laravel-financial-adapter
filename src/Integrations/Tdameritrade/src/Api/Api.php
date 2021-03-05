@@ -1,8 +1,8 @@
 <?php
 
-namespace Mackensiealvarezz\Tdameritrade\Api;
+namespace G2\FinancialAdapter\Integrations\Tdameritrade\Api;
 
-use Mackensiealvarezz\Tdameritrade\Tdameritrade;
+use G2\FinancialAdapter\Integrations\Tdameritrade\Tdameritrade;
 
 class Api
 {

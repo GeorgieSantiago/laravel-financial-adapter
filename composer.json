@@ -18,7 +18,6 @@
     "require": {
         "php": "^7.1",
         "illuminate/support": "^6.0",
-        "mackensiealvarezz/tdameritrade-laravel": "^2.0.1",
         "matthewbdaly/artisan-standalone": "^0.0.11",
         "moneyphp/money": "^3.3"
     },
@@ -29,7 +28,7 @@
     "autoload": {
         "psr-4": {
             "G2\\FinancialAdapter\\": "src",
-            "Mackensiealvarezz\\Tdameritrade\\": "vendor/mackensiealvarezz/tdameritrade-laravel/src"
+            "Mackensiealvarezz\\Tdameritrade\\": "integrations/tdameritrade-laravel/src"
         }
     },
     "autoload-dev": {

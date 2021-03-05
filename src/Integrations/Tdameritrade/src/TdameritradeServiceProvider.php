@@ -1,6 +1,6 @@
 <?php
 
-namespace Mackensiealvarezz\Tdameritrade;
+namespace G2\FinancialAdapter\Integrations\Tdameritrade;
 
 use illuminate\support\ServiceProvider;
 

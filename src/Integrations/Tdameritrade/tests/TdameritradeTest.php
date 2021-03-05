@@ -1,17 +1,17 @@
 <?php
 
-namespace Mackensiealvarezz\Tdameritrade\Tests;
+namespace G2\FinancialAdapter\Integrations\Tdameritrade\Tests;
 
 use Illuminate\Support\Facades\Config;
-use Mackensiealvarezz\Tdameritrade\Api\Accounts;
-use Mackensiealvarezz\Tdameritrade\Api\Instruments;
-use Mackensiealvarezz\Tdameritrade\Api\Market;
-use Mackensiealvarezz\Tdameritrade\Api\Movers;
-use Mackensiealvarezz\Tdameritrade\Api\Options;
-use Mackensiealvarezz\Tdameritrade\Api\Orders;
-use Mackensiealvarezz\Tdameritrade\Api\Price;
-use Mackensiealvarezz\Tdameritrade\Api\Transactions;
-use Mackensiealvarezz\Tdameritrade\Tdameritrade;
+use G2\FinancialAdapter\Integrations\Tdameritrade\Api\Accounts;
+use G2\FinancialAdapter\Integrations\Tdameritrade\Api\Instruments;
+use G2\FinancialAdapter\Integrations\Tdameritrade\Api\Market;
+use G2\FinancialAdapter\Integrations\Tdameritrade\Api\Movers;
+use G2\FinancialAdapter\Integrations\Tdameritrade\Api\Options;
+use G2\FinancialAdapter\Integrations\Tdameritrade\Api\Orders;
+use G2\FinancialAdapter\Integrations\Tdameritrade\Api\Price;
+use G2\FinancialAdapter\Integrations\Tdameritrade\Api\Transactions;
+use G2\FinancialAdapter\Integrations\Tdameritrade\Tdameritrade;
 use Orchestra\Testbench\TestCase;
 
 class TdameritradeTest extends TestCase

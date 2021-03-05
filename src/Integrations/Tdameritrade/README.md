@@ -25,7 +25,7 @@ TD_CALLBACK="CALLBACK"
 ## 4. Include Package
 When using the package, don't forget to include It on top of the file
 
-    use Mackensiealvarezz\Tdameritrade\Tdameritrade;
+    use G2\FinancialAdapter\Integrations\Tdameritrade\Tdameritrade;
 
 # OAuth
 

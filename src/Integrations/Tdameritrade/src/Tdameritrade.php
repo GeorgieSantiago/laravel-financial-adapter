@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Mackensiealvarezz\Tdameritrade;
+namespace G2\FinancialAdapter\Integrations\Tdameritrade;
 
 use Exception;
 use GuzzleHttp\Client;
@@ -49,7 +49,7 @@ class Tdameritrade
 
     public static function generateOAuth()
     {
-        return "https://auth.tdameritrade.com/auth?response_type=code&redirect_uri=" . config('tdameritrade.callback') . "&client_id=" . config('tdameritrade.key') . "%40AMER.OAUTHAP";
+        return "https://auth.tdameritrade.com/auth?response_type=code&redirect_uri=" . config('tdameritrade.callback') . "&client_id=" . config('TDAmeritrade')['callback'] . "%40AMER.OAUTHAP";
     }
 
     public static function redirectOAuth()
@@ -62,7 +62,7 @@ class Tdameritrade
         $body = [
             'grant_type' => "refresh_token",
             'access_type' => 'offline',
-            'client_id' => config('tdameritrade.key'),
+            'client_id' => config('TDAmeritrade')['key'],
             'refresh_token' => $this->refresh_token
         ];
 
@@ -76,8 +76,8 @@ class Tdameritrade
         $body = [
             'grant_type' => 'authorization_code',
             'access_type' => 'offline',
-            'client_id' => config('tdameritrade.key'),
-            'redirect_uri' => config('tdameritrade.callback'),
+            'client_id' => config('TDAmeritrade')['key'],
+            'redirect_uri' => config('TDAmeritrade')['callback'],
             'code'  => $code
         ];
 

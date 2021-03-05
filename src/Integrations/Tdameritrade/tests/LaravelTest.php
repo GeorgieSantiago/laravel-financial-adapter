@@ -1,9 +1,9 @@
 <?
 
-namespace Mackensiealvarezz\Tdameritrade\Tests;
+namespace G2\FinancialAdapter\Integrations\Tdameritrade\Tests;
 
 use Orchestra\Testbench\TestCase;
-use Mackensiealvarezz\Tdameritrade\TdameritradeServiceProvider;
+use G2\FinancialAdapter\Integrations\Tdameritrade\TdameritradeServiceProvider;
 
 class LaravelTest extends TestCase
 {

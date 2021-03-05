@@ -43,7 +43,7 @@ return [
 		'tda' => [
             'service' => 'TD Ameritrade',
             'auth' => G2\FinancialAdapter\TdAmeritrade\TdAmeritradePass::class,
-            'client' => Mackensiealvarezz\Tdameritrade\Tdameritrade::class,
+            'client' => G2\FinancialAdapter\Integrations\Tdameritrade\Tdameritrade::class,
             'adapter' => G2\FinancialAdapter\TdAmeritrade\TdAmeritradeAdapter::class,
         ]
 	]
