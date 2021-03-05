@@ -5,14 +5,13 @@ namespace G2\FinancialAdapter\TdAmeritrade;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Mackensiealvarezz\Tdameritrade\Tdameritrade;
-use G2\FinancialAdapter\Services\Client\{ TradeAccount, TradeClient, BaseBuilder };
-use G2\FinancialAdapter\Services\Interfaces\{ IServiceAdapter, ITradeClient };
-use G2\FinancialAdapter\Services\ServiceToken;
+use G2\FinancialAdapter\Client\{ TradeAccount, TradeClient, BaseBuilder };
+use G2\FinancialAdapter\Interfaces\{ IServiceAdapter, ITradeClient };
 use G2\FinancialAdapter\Models\ServiceAccount;
 use G2\FinancialAdapter\Models\Service;
 
 
-class TdAmeritradePass implements IServiceAdapter
+class TdAmeritradePass
 {
 
 	public function __construct(ServiceAccount $account)
@@ -20,7 +19,7 @@ class TdAmeritradePass implements IServiceAdapter
 		$this->account = $account;
 	}
 
-    public function authenticate() : RedirectResponse
+    public static function authenticate() : RedirectResponse
     {
 	    return Tdameritrade::redirectOAuth();
     }

@@ -18,6 +18,7 @@ class FinancialAdapterServiceProvider extends ServiceProvider
          $this->loadRoutesFrom(__DIR__.'/routes.php');
          $this->commands([
             \G2\FinancialAdapter\Commands\Migrate::class,
+            \G2\FinancialAdapter\Commands\Seed::class,
         ]);
         if ($this->app->runningInConsole()) {
             $this->publishes([

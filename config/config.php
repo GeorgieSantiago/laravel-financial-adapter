@@ -40,12 +40,11 @@ return [
     | to apply changes
     */
 	'services' => [
-		[
+		'tda' => [
             'service' => 'TD Ameritrade',
-            'code' => 'tda',
             'auth' => G2\FinancialAdapter\TdAmeritrade\TdAmeritradePass::class,
             'client' => Mackensiealvarezz\Tdameritrade\Tdameritrade::class,
-            'adapter' => G2\FinancialAdapter\TdAmeritrade\TdAmeritradeAdapter::class
+            'adapter' => G2\FinancialAdapter\TdAmeritrade\TdAmeritradeAdapter::class,
         ]
 	]
 ];

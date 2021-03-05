@@ -15,6 +15,10 @@ You can install the package via composer:
 composer require g2/financialadapter
 ```
 
+## Env Variables:
+TD_KEY=
+TD_CALLBACK=
+
 ## Usage
 
 ``` php

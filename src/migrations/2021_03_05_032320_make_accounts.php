@@ -19,14 +19,7 @@ class MakeAccounts extends Migration
             $table->string('account_name');
 	        $table->string('account_type');
             $table->string('account_external_id');
-	        $table->boolean('is_day_trader')->nullable()->default();
 	        $table->boolean('is_closing_only_restricted')->nullable();
-            $table->unsignedBigInteger('service_account_id');
-            $table
-            ->foreign('service_account_id')
-            ->references('id')
-            ->on('service_accounts')
-            ->onDelete('cascade');
             $table->boolean('is_day_trader');
 	        $table->float('accured_interest', 10, 2);
 	        $table->float('buying_power', 10, 2);
