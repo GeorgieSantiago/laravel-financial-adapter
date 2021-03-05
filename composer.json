@@ -34,7 +34,10 @@
     "autoload-dev": {
         "psr-4": {
             "G2\\FinancialAdapter\\Tests\\": "tests"
-        }
+        },
+        "files": [
+            "src/console.php"
+        ]
     },
     "scripts": {
         "test": "vendor/bin/phpunit",

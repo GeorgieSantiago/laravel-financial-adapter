@@ -14,10 +14,11 @@ class FinancialAdapterServiceProvider extends ServiceProvider
         /*
          * Optional methods to load your package assets
          */
-         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+         $this->loadMigrationsFrom(__DIR__.'/migrations');
          $this->loadRoutesFrom(__DIR__.'/routes.php');
-         $this->commands(__DIR__.'/Console/Commands');
-
+         $this->commands([
+            \G2\FinancialAdapter\Commands\Migrate::class,
+        ]);
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('finance.php'),
