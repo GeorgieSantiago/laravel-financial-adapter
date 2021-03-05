@@ -3,6 +3,7 @@
 namespace G2\FinancialAdapter;
 
 use Illuminate\Support\ServiceProvider;
+use Mackensiealvarezz\Tdameritrade\Tdameritrade;
 
 class FinancialAdapterServiceProvider extends ServiceProvider
 {
@@ -11,12 +12,14 @@ class FinancialAdapterServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        new Tdameritrade();
         /*
          * Optional methods to load your package assets
          */
-         $this->loadMigrationsFrom(__DIR__.'/migrations');
-         $this->loadRoutesFrom(__DIR__.'/routes.php');
-         $this->commands([
+        $this->app->register(Tdameritrade::class);
+        $this->loadMigrationsFrom(__DIR__.'/migrations');
+        $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->commands([
             \G2\FinancialAdapter\Commands\Migrate::class,
             \G2\FinancialAdapter\Commands\Seed::class,
         ]);
