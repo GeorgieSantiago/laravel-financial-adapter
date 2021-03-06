@@ -1,6 +1,6 @@
 <?php
 
-namespace G2\FinancialAdapter\Integrations\Tdameritrade\Facades;
+namespace G2\FinancialAdapter\TdaSdk\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -7,7 +7,7 @@ use G2\FinancialAdapter\Client\TradeClient;
 use G2\FinancialAdapter\Client\Stock;
 use G2\FinancialAdapter\Interfaces\IAction;
 use G2\FinancialAdapter\Response\TdAmeritradeAccountResponse;
-use G2\FinancialAdapter\Integrations\Tdameritrade\Tdameritrade;
+use G2\FinancialAdapter\TdaSdk\Tdameritrade;
 use G2\FinancialAdapter\Exceptions\ExternalTokenExpiredException;
 use Illuminate\Support\Carbon;
 

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace G2\FinancialAdapter\Integrations\Tdameritrade;
+namespace G2\FinancialAdapter\TdaSdk;
 
 use Exception;
 use GuzzleHttp\Client;
@@ -49,7 +49,7 @@ class Tdameritrade
 
     public static function generateOAuth()
     {
-        return "https://auth.tdameritrade.com/auth?response_type=code&redirect_uri=" . config('tdameritrade.callback') . "&client_id=" . config('TDAmeritrade')['callback'] . "%40AMER.OAUTHAP";
+        return "https://auth.tdameritrade.com/auth?response_type=code&redirect_uri=" . config('TDAmeritrade')['callback'] . "&client_id=" . config('TDAmeritrade')['key'] . "%40AMER.OAUTHAP";
     }
 
     public static function redirectOAuth()

@@ -4,7 +4,7 @@ namespace G2\FinancialAdapter\TdAmeritrade;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
-use G2\FinancialAdapter\Integrations\Tdameritrade\Tdameritrade;
+use G2\FinancialAdapter\TdaSdk\Tdameritrade;
 use G2\FinancialAdapter\Client\{ TradeAccount, TradeClient, BaseBuilder };
 use G2\FinancialAdapter\Interfaces\{ IServiceAdapter, ITradeClient };
 use G2\FinancialAdapter\Models\ServiceAccount;

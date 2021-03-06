@@ -1,8 +1,8 @@
 <?php
 
-namespace G2\FinancialAdapter\Integrations\Tdameritrade\Api;
+namespace G2\FinancialAdapter\TdaSdk\Api;
 
-use G2\FinancialAdapter\Integrations\Tdameritrade\Tdameritrade;
+use G2\FinancialAdapter\TdaSdk\Tdameritrade;
 
 class Api
 {

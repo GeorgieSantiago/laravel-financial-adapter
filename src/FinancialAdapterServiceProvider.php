@@ -3,7 +3,6 @@
 namespace G2\FinancialAdapter;
 
 use Illuminate\Support\ServiceProvider;
-use G2\FinancialAdapter\Integrations\Tdameritrade\Tdameritrade;
 
 class FinancialAdapterServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace G2\FinancialAdapter\Integrations\Tdameritrade;
+namespace G2\FinancialAdapter\TdaSdk;
 
 use illuminate\support\ServiceProvider;
 

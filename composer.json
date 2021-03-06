@@ -27,8 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "G2\\FinancialAdapter\\": "src",
-            "Mackensiealvarezz\\Tdameritrade\\": "integrations/tdameritrade-laravel/src"
+            "G2\\FinancialAdapter\\": "src"
         }
     },
     "autoload-dev": {

@@ -1,8 +1,8 @@
 <?php
 
-namespace G2\FinancialAdapter\Integrations\Tdameritrade\Api;
+namespace G2\FinancialAdapter\TdaSdk\Api;
 
-use G2\FinancialAdapter\Integrations\Tdameritrade\Api\Api;
+use G2\FinancialAdapter\TdaSdk\Api\Api;
 use Illuminate\Support\Carbon;
 
 class Transactions extends Api
